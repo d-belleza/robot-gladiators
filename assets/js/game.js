@@ -73,7 +73,7 @@ var startGame = function(){
       pickedEnemyObj.health = randomNumber(40,60);
       fight(pickedEnemyObj);
       // if we're not at the last enemy in the array
-      if (playerInfo.health > 0 && i < enemyNames.length - 1) {
+      if (playerInfo.health > 0 && i < enemyInfo.length - 1) {
         // ask if user wants to use the store before next round
         var storeConfirm = window.confirm("The fight is over, visit the store before the next round?");
 
